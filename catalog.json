@@ -1,0 +1,58 @@
+[
+    {
+        "id": "Product 1",
+        "name": "Samsung Galaxy S22 Ultra",
+        "img": "assets/img/products/feature-1.png",
+        "price": 32700,
+        "category": "phones"
+    },
+    {
+        "id": "Product 2",
+        "name": "Apple iPhone 11",
+        "img": "assets/img/products/feature-2.png",
+        "price": 14500,
+        "category": "phones"
+    },
+    {
+        "id": "Product 3",
+        "name": "Xiaomi Redmi 9",
+        "img": "assets/img/products/feature-3.png",
+        "price": 4000,
+        "category": "phones"
+    },
+    {
+        "id": "Product 4",
+        "name": "GoPro Hero 8",
+        "img": "assets/img/products/feature-4.png",
+        "price": 8500,
+        "category": "cameras"
+    },
+    {
+        "id": "Product 5",
+        "name": "Apple MacBook Air 13",
+        "img": "assets/img/products/feature-5.png",
+        "price": 28000,
+        "category": "laptops"
+    },
+    {
+        "id": "Product 6",
+        "name": "Asus ZenBook Pro",
+        "img": "assets/img/products/feature-6.png",
+        "price": 21600,
+        "category": "laptops"
+    },
+    {
+        "id": "Product 7",
+        "name": "Samsung Tab S6",
+        "img": "assets/img/products/feature-7.png",
+        "price": 7400,
+        "category": "tablets"
+    },
+    {
+        "id": "Product 8",
+        "name": "Apple iPad 2020",
+        "img": "assets/img/products/feature-8.png",
+        "price": 11600,
+        "category": "tablets"
+    }
+]

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+
+    <link rel="stylesheet" href="assets/css/index.css">
+    <link rel="stylesheet" href="assets/css/Header.css">
+    <link rel="stylesheet" href="assets/css/Products.css">
+    <link rel="stylesheet" href="assets/css/Spinner.css">
+    <link rel="stylesheet" href="assets/css/Shopping.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;600;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/nice-select.css" type="text/css">
+    <link rel="stylesheet" href="assets/css/jquery-ui.min.css" type="text/css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="header__logo">
+                        <a href="index.html"><img src="assets/img/logo.png" width="119px" height="50px" alt=""></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <nav class="header__menu">
+                        <ul>
+                            <li><a href="index.html">HOME</a></li>
+                            <li class="active"><a href="shoping-cart.html">CART</a></li>
+                            <li><a href="checkout.html">CHECKOUT</a></li>
+                            <li><a href="#">CONTACT</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-lg-3">
+                    <div class="header__cart">
+                        <ul>
+                            <div class="cart_count"></div>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="shoping-cart spad">
+        <div id="spinner"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="shoping__cart__table">
+                        <table>
+                            <tbody>
+                                <div id="cart_items"></div>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="shoping__continue">
+                        <div class="shoping__discount">
+                            <h5>Discount Codes</h5>
+                            <form action="#">
+                                <input type="text" id="shopping__coupon" placeholder="Enter your coupon code" onblur="shoppingPage.getCoupon()">
+                                <button type="submit" class="site-btn" onclick="shoppingPage.calculateDiscount()">APPLY COUPON</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="shoping__checkout">
+                        <h5>Cart Total</h5>
+                            <ul>
+                                <div id="main_cart"></div>
+                                <div id="cart_total"></div>
+                            </ul>
+                        <a href="checkout.html" class="primary-btn">PROCEED TO CHECKOUT</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="cart_items"></div>
+    <div id="shopping" ></div>
+    <div id="order_products" style="display: none"></div>
+    <div id="order_total" style="display: none"></div>
+    <div id="products" style="display: none"></div>
+    <div class="test_sum" style="display: none"></div>
+
+    <script src="js/variables.js"></script>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/localStorageUtil.js"></script>
+    <script src="js/Products.js"></script>
+    <script src="js/Shopping.js"></script>
+    <script src="js/Spinner.js"></script>
+    <script src="js/Checkout.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
